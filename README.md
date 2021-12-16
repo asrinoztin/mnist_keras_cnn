@@ -2,9 +2,9 @@
 In this study, the data set known as mnist was used. The aim of the study is to teach and predict the handwritten numbers in each of the images in the data set, which can take one of 10 unique values as 0 to 9 inclusive in total, by working in pixel size, to the model.
 
 # Design Choices
-Before image classification, we should know the dataset well and make it available to the model. This optimization process is called feature learning. First, the image is made easier to process using the convolution layer. After this process, in the pooling layer, as in the convolution layer, the size reduction process is applied by moving the kernel over the pixels, which we know from image processing, in order to reduce the processing power. After these processes are repeated enough and the data is made easy to process, the outputs of the feature learning process are given to the model as input. As a result of my research on how models should be created, I have reached the information that the accuracy rates of the models established as in the image below will be high. However, since we didn't need to make a professional model in this project, the purpose was only to understand the selection and use of layers, the overall system design,  I have built a simpler model, so as not to prolong the complexity and training time.
+Before image classification, we should know the dataset well and make it available to the model. This optimization process is called feature learning. First, the image is made easier to process using the convolution layer. After this process, in the pooling layer, as in the convolution layer, the size reduction process is applied by moving the kernel over the pixels, which we know from image processing, in order to reduce the processing power. After these processes are repeated enough and the data is made easy to process, the outputs of the feature learning process are given to the model as input.
 
-// buraya image gelicek
+![146385526-d7cb9b40-4631-4bb1-83ad-0842b07faf24](https://user-images.githubusercontent.com/58219688/146405076-4520c496-6293-44f6-88ef-15fadfcd30a2.png)
 
 # Layer Properties
 ## tf.keras.layers.Conv2D
@@ -37,6 +37,7 @@ Keras info: Just your regular densely-connected NN layer.
 Role: The role is to learn/generalize the non-linear function.
 
 # References
+https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53
 https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D 
 https://www.tensorflow.org/tutorials/images/cnn 
 https://www.tensorflow.org/api_docs/python/tf/keras/layers/BatchNormalization
